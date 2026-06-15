@@ -67,14 +67,14 @@ export function Pricing() {
             <div
               key={t.name}
               className={
-                "relative flex flex-col rounded-2xl border p-8 transition-all " +
+                "relative flex flex-col rounded-3xl border p-8 transition-all duration-500 " +
                 (t.popular
-                  ? "border-navy bg-navy text-white shadow-[0_40px_80px_-32px_rgba(30,58,95,0.5)]"
-                  : "border-hair bg-white text-navy hover:-translate-y-0.5 hover:shadow-[0_24px_48px_-24px_rgba(30,58,95,0.2)]")
+                  ? "border-navy bg-gradient-to-b from-navy to-[#16304f] text-white shadow-[0_50px_100px_-32px_rgba(30,58,95,0.55)] lg:-translate-y-2 lg:scale-[1.02]"
+                  : "border-hair surface-soft text-navy shadow-premium hover:-translate-y-1")
               }
             >
               {t.popular && (
-                <span className="absolute -top-3 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-electric px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-[0_8px_24px_-8px_rgba(14,165,233,0.7)]">
+                <span className="absolute -top-3.5 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-gradient-to-b from-electric-soft to-electric px-3.5 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-[0_12px_28px_-8px_rgba(14,165,233,0.7)]">
                   <span className="size-1 rounded-full bg-white" /> Most popular
                 </span>
               )}
@@ -82,12 +82,12 @@ export function Pricing() {
                 {t.name}
               </div>
               <div className="mt-4 flex items-baseline gap-1.5">
-                <span className="font-serif text-5xl tabular-nums">{t.price}</span>
-                <span className={"text-[13.5px] " + (t.popular ? "text-white/60" : "text-navy/55")}>
+                <span className="font-serif text-5xl tabular-nums tracking-tight">{t.price}</span>
+                <span className={"text-[13.5px] italic " + (t.popular ? "text-white/60" : "text-navy/55")}>
                   {t.cadence}
                 </span>
               </div>
-              <p className={"mt-3 text-[14px] " + (t.popular ? "text-white/70" : "text-navy/65")}>
+              <p className={"mt-3 text-[14px] leading-relaxed " + (t.popular ? "text-white/70" : "text-navy/65")}>
                 {t.blurb}
               </p>
 
@@ -114,9 +114,9 @@ export function Pricing() {
               <a
                 href="#"
                 className={
-                  "mt-8 inline-flex items-center justify-center gap-1.5 rounded-xl px-5 py-3.5 text-sm font-semibold transition-all active:scale-[0.98] " +
+                  "mt-8 inline-flex items-center justify-center gap-1.5 rounded-full px-6 py-3.5 text-sm font-semibold transition-all active:scale-[0.98] " +
                   (t.popular
-                    ? "bg-electric text-white shadow-[0_12px_28px_-10px_rgba(14,165,233,0.7)] hover:bg-electric-soft"
+                    ? "bg-electric text-white shadow-[0_18px_36px_-10px_rgba(14,165,233,0.75)] hover:bg-electric-soft"
                     : "border border-navy/15 bg-white text-navy hover:border-electric/40 hover:bg-sky-tint")
                 }
               >
@@ -128,6 +128,7 @@ export function Pricing() {
             </div>
           ))}
         </div>
+
 
         <p className="mx-auto mt-10 max-w-3xl text-center text-[13px] leading-relaxed text-navy/55">
           Prices in ZAR, cancel anytime. Card or debit order. The insights suite runs on open National Treasury data (OCDS and BAS, PDDL licence): no per-query data fees, ever. Once-off services: <strong className="text-navy">CSD registration R800</strong> · <strong className="text-navy">B-BBEE affidavit R350</strong> · <strong className="text-navy">CIDB registration R1 500</strong>.

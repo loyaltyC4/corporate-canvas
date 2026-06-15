@@ -105,13 +105,14 @@ export function WhatsAppBrief() {
 
             <a
               href="#pricing"
-              className="mt-10 inline-flex items-center gap-2 rounded-xl bg-navy px-5 py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_-12px_rgba(30,58,95,0.5)] transition-all hover:bg-navy-soft active:scale-[0.98]"
+              className="mt-10 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_36px_-12px_rgba(30,58,95,0.5)] transition-all hover:-translate-y-0.5 hover:bg-navy-soft active:scale-[0.98]"
             >
               Set up my WhatsApp brief
               <svg width="14" height="14" viewBox="0 0 12 12" aria-hidden>
                 <path d="M3 6h6m0 0L6 3m3 3L6 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
             </a>
+
           </div>
         </div>
       </div>
