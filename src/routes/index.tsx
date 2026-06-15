@@ -12,6 +12,7 @@ import { Pricing } from "@/components/landing/Pricing";
 import { FAQ } from "@/components/landing/FAQ";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { SiteFooter } from "@/components/landing/SiteFooter";
+import { Reveal } from "@/components/landing/Reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,16 +38,16 @@ function Index() {
     <main className="min-h-screen bg-white text-navy">
       <Nav />
       <Hero />
-      <TrustStrip />
-      <WireTicker />
-      <Eligibility />
-      <AgentPanel />
-      <WhatsAppBrief />
-      <Intelligence />
-      <HowItWorks />
-      <Pricing />
-      <FAQ />
-      <FinalCTA />
+      <Reveal><TrustStrip /></Reveal>
+      <Reveal><WireTicker /></Reveal>
+      <Reveal><Eligibility /></Reveal>
+      <Reveal><AgentPanel /></Reveal>
+      <Reveal><WhatsAppBrief /></Reveal>
+      <Reveal><Intelligence /></Reveal>
+      <Reveal><HowItWorks /></Reveal>
+      <Reveal><Pricing /></Reveal>
+      <Reveal><FAQ /></Reveal>
+      <Reveal><FinalCTA /></Reveal>
       <SiteFooter />
     </main>
   );
