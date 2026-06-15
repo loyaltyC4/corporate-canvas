@@ -17,7 +17,7 @@ export function FinalCTA() {
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href="#top"
-            className="inline-flex items-center gap-2 rounded-xl bg-electric px-6 py-4 text-[15px] font-semibold text-white shadow-[0_18px_40px_-12px_rgba(14,165,233,0.7)] transition-all hover:bg-electric-soft active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-full bg-electric px-7 py-4 text-[15px] font-semibold text-white shadow-[0_24px_48px_-12px_rgba(14,165,233,0.7)] transition-all hover:-translate-y-0.5 hover:bg-electric-soft active:scale-[0.98]"
           >
             Search tenders free
             <svg width="14" height="14" viewBox="0 0 12 12" aria-hidden>
@@ -26,11 +26,12 @@ export function FinalCTA() {
           </a>
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-4 text-[15px] font-semibold text-white/90 transition-colors hover:bg-white/10"
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 text-[15px] font-semibold text-white/90 backdrop-blur-sm transition-colors hover:bg-white/10"
           >
             See pricing
           </a>
         </div>
+
         <p className="mt-8 font-mono text-[10.5px] uppercase tracking-[0.2em] text-white/40">
           Live data from National Treasury eTenders · OCDS · POPIA-aligned
         </p>
