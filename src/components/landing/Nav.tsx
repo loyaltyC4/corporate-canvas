@@ -31,7 +31,7 @@ export function Nav() {
           </a>
           <a
             href="#pricing"
-            className="inline-flex items-center gap-1.5 rounded-md bg-navy px-4 py-2.5 text-[13.5px] font-semibold text-white shadow-[0_1px_0_0_rgba(255,255,255,0.15)_inset,0_8px_24px_-12px_rgba(30,58,95,0.5)] transition-all hover:bg-navy-soft active:scale-[0.98]"
+            className="inline-flex items-center gap-1.5 rounded-full bg-navy px-5 py-2.5 text-[13.5px] font-semibold text-white shadow-[0_1px_0_0_rgba(255,255,255,0.15)_inset,0_12px_28px_-12px_rgba(30,58,95,0.55)] transition-all hover:-translate-y-px hover:bg-navy-soft active:scale-[0.98]"
           >
             Get started
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
