@@ -48,34 +48,35 @@
 :root {
   --radius: 0.625rem;
 
-  --brand-navy: #1E3A5F;
-  --brand-navy-soft: #2E4F7A;
-  --brand-electric: #0EA5E9;
-  --brand-electric-soft: #38BDF8;
-  --sky-tint: #F0F7FF;
-  --sky-wash: #E0F2FE;
-  --hairline: rgba(30, 58, 95, 0.1);
-  --success: #15803D;
+  /* ── Arctic Enterprise palette ── */
+  --brand-navy:          #13283D;
+  --brand-navy-soft:     #1E3D5C;
+  --brand-electric:      #2F6FB0;
+  --brand-electric-soft: #3D86CE;
+  --sky-tint:            #F4F8FC;
+  --sky-wash:            #E7F0F9;
+  --hairline:            rgba(19, 40, 61, 0.10);
+  --success:             #15803D;
 
-  --background: #FFFFFF;
-  --foreground: #1E3A5F;
-  --card: #FFFFFF;
-  --card-foreground: #1E3A5F;
-  --popover: #FFFFFF;
-  --popover-foreground: #1E3A5F;
-  --primary: #1E3A5F;
-  --primary-foreground: #FFFFFF;
-  --secondary: #F0F7FF;
-  --secondary-foreground: #1E3A5F;
-  --muted: #F0F7FF;
-  --muted-foreground: rgba(30, 58, 95, 0.65);
-  --accent: #0EA5E9;
-  --accent-foreground: #FFFFFF;
-  --destructive: #DC2626;
+  --background:          #F4F8FC;
+  --foreground:          #0F1E2E;
+  --card:                #FFFFFF;
+  --card-foreground:     #0F1E2E;
+  --popover:             #FFFFFF;
+  --popover-foreground:  #0F1E2E;
+  --primary:             #13283D;
+  --primary-foreground:  #FFFFFF;
+  --secondary:           #E7F0F9;
+  --secondary-foreground:#0F1E2E;
+  --muted:               #EEF4FA;
+  --muted-foreground:    rgba(15, 30, 46, 0.60);
+  --accent:              #2F6FB0;
+  --accent-foreground:   #FFFFFF;
+  --destructive:         #DC2626;
   --destructive-foreground: #FFFFFF;
-  --border: rgba(30, 58, 95, 0.1);
-  --input: rgba(30, 58, 95, 0.12);
-  --ring: #0EA5E9;
+  --border:              rgba(19, 40, 61, 0.10);
+  --input:               rgba(19, 40, 61, 0.12);
+  --ring:                #2F6FB0;
 }
 
 @layer base {
@@ -138,8 +139,8 @@
 
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(30, 58, 95, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(30, 58, 95, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(19, 40, 61, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(19, 40, 61, 0.06) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -151,17 +152,17 @@
 
 .surface-soft {
   background:
-    radial-gradient(circle at 0% 0%, rgba(14, 165, 233, 0.06), transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(30, 58, 95, 0.04), transparent 50%),
+    radial-gradient(circle at 0% 0%, rgba(47, 111, 176, 0.06), transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(19, 40, 61, 0.04), transparent 50%),
     #ffffff;
 }
 
 .shadow-premium {
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.8) inset,
-    0 1px 2px rgba(30, 58, 95, 0.04),
-    0 24px 48px -28px rgba(30, 58, 95, 0.18),
-    0 60px 120px -60px rgba(14, 165, 233, 0.18);
+    0 1px 2px rgba(19, 40, 61, 0.04),
+    0 24px 48px -28px rgba(19, 40, 61, 0.18),
+    0 60px 120px -60px rgba(47, 111, 176, 0.18);
 }
 
 @media (prefers-reduced-motion: reduce) {
