@@ -6,17 +6,17 @@ export function WhatsAppBrief() {
           {/* Chat preview */}
           <div className="order-2 lg:order-1">
             <div className="relative mx-auto max-w-[420px]">
-              <div className="absolute -inset-8 -z-10 rounded-[36px] bg-gradient-to-br from-sky-wash via-white to-transparent blur-2xl" />
-              <div className="overflow-hidden rounded-3xl border border-hair bg-[#ECE5DD] shadow-[0_40px_80px_-40px_rgba(30,58,95,0.35)]">
+              <div className="absolute -inset-10 -z-10 rounded-[40px] bg-gradient-to-br from-sky-wash via-white to-transparent blur-3xl" />
+              <div className="overflow-hidden rounded-[32px] border border-hair bg-[#ECE5DD] shadow-[0_50px_100px_-40px_rgba(30,58,95,0.45),0_20px_40px_-20px_rgba(14,165,233,0.25)]">
                 {/* Header */}
-                <div className="flex items-center gap-3 bg-[#075E54] px-4 py-3 text-white">
-                  <div className="grid size-9 place-items-center rounded-full bg-white/10 font-serif text-base font-bold">
+                <div className="flex items-center gap-3 bg-gradient-to-b from-[#0a6e62] to-[#075E54] px-4 py-3.5 text-white">
+                  <div className="grid size-10 place-items-center rounded-full bg-white/15 font-serif text-base font-bold shadow-inner">
                     V
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="truncate text-[14px] font-semibold">Vula Agent</div>
-                    <div className="flex items-center gap-1.5 text-[11px] text-white/70">
-                      <span className="size-1.5 rounded-full bg-emerald-300" /> online
+                    <div className="truncate text-[14px] font-semibold tracking-tight">Vula Agent</div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-white/75">
+                      <span className="size-1.5 animate-pulse-dot rounded-full bg-emerald-300" /> online
                     </div>
                   </div>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden className="text-white/80">
@@ -25,44 +25,44 @@ export function WhatsAppBrief() {
                 </div>
 
                 {/* Messages */}
-                <div className="space-y-3 px-4 py-5">
+                <div className="space-y-3 px-4 py-6">
                   <div className="text-center">
-                    <span className="rounded bg-white/70 px-2 py-0.5 font-mono text-[9.5px] uppercase tracking-wider text-navy/60">
+                    <span className="rounded-full bg-white/70 px-2.5 py-0.5 font-mono text-[9.5px] uppercase tracking-wider text-navy/60 shadow-sm">
                       Today · 07:02
                     </span>
                   </div>
 
-                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-[#DCF8C6] px-3.5 py-2.5 text-[13.5px] leading-snug text-navy shadow-sm">
+                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-gradient-to-b from-[#E7FBCE] to-[#DCF8C6] px-4 py-3 text-[13.5px] leading-snug text-navy shadow-[0_2px_8px_-2px_rgba(30,58,95,0.15)]">
                     Good morning, Thandiwe. <strong>3 new tenders</strong> match your profile. <strong>1 closes Friday.</strong>
                   </div>
 
-                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-[#DCF8C6] px-3.5 py-2.5 text-[13.5px] leading-snug text-navy shadow-sm">
-                    <div className="font-semibold">R2.1M cleaning tender · Gauteng Health</div>
-                    <div className="mt-1 text-[12.5px] text-navy/70">
+                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-gradient-to-b from-[#E7FBCE] to-[#DCF8C6] px-4 py-3 text-[13.5px] leading-snug text-navy shadow-[0_2px_8px_-2px_rgba(30,58,95,0.15)]">
+                    <div className="font-semibold tracking-tight">R2.1M cleaning tender · Gauteng Health</div>
+                    <div className="mt-1 text-[12.5px] italic text-navy/70">
                       You qualify on all 3 hard requirements.
                     </div>
-                    <a className="mt-2 inline-block font-mono text-[11px] font-semibold uppercase tracking-wider text-electric">
-                      Review →
+                    <a className="mt-2 inline-flex items-center gap-1 font-mono text-[11px] font-semibold uppercase tracking-wider text-electric">
+                      Review <span aria-hidden>→</span>
                     </a>
                   </div>
 
-                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-[#DCF8C6] px-3.5 py-2.5 text-[13.5px] leading-snug text-navy shadow-sm">
-                    <span className="inline-flex items-center gap-1.5 rounded bg-amber-100 px-1.5 py-0.5 font-mono text-[9.5px] font-bold uppercase tracking-wider text-amber-800">
+                  <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-md bg-gradient-to-b from-[#E7FBCE] to-[#DCF8C6] px-4 py-3 text-[13.5px] leading-snug text-navy shadow-[0_2px_8px_-2px_rgba(30,58,95,0.15)]">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2 py-0.5 font-mono text-[9.5px] font-bold uppercase tracking-wider text-amber-800">
                       Reminder
                     </span>
                     <p className="mt-1.5">Your <strong>tax clearance</strong> expires in 21 days.</p>
-                    <a className="mt-1 inline-block font-mono text-[11px] font-semibold uppercase tracking-wider text-electric">
-                      Renew →
+                    <a className="mt-1 inline-flex items-center gap-1 font-mono text-[11px] font-semibold uppercase tracking-wider text-electric">
+                      Renew <span aria-hidden>→</span>
                     </a>
                   </div>
                 </div>
 
                 {/* Input bar */}
-                <div className="flex items-center gap-2 border-t border-black/5 bg-[#F0F0F0] px-3 py-2.5">
-                  <div className="flex-1 rounded-full bg-white px-3 py-1.5 text-[12px] text-navy/40">
+                <div className="flex items-center gap-2 border-t border-black/5 bg-[#F0F0F0] px-3 py-3">
+                  <div className="flex-1 rounded-full bg-white px-4 py-2 text-[12px] text-navy/40 shadow-inner">
                     Reply to ask anything…
                   </div>
-                  <div className="grid size-8 place-items-center rounded-full bg-[#075E54] text-white">
+                  <div className="grid size-9 place-items-center rounded-full bg-gradient-to-br from-[#0a6e62] to-[#075E54] text-white shadow-md">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                       <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
                     </svg>
@@ -77,9 +77,10 @@ export function WhatsAppBrief() {
             <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-electric">
               New
             </div>
-            <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-navy sm:text-[52px]">
-              The brief comes to <em className="italic text-electric">WhatsApp.</em>
+            <h2 className="mt-4 font-serif text-[36px] leading-[1.08] tracking-[-0.01em] text-navy sm:text-[54px]">
+              The brief comes to <em className="italic font-normal text-electric">WhatsApp.</em>
             </h2>
+
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-navy/65">
               No app to remember. No inbox to dig through. Your matched tenders, closing reminders and document alerts arrive where South African business already happens.
             </p>
