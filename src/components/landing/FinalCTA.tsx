@@ -1,8 +1,29 @@
+import illuLaunch from "@/assets/illu-launch.png";
+
 export function FinalCTA() {
   return (
     <section className="relative overflow-hidden border-b border-navy/40 bg-navy text-white">
       <div className="absolute inset-0 bg-grid opacity-[0.07]" />
       <div className="pointer-events-none absolute -top-32 left-1/2 size-[640px] -translate-x-1/2 rounded-full bg-electric/25 blur-[120px]" />
+      <img
+        src={illuLaunch}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        width={768}
+        height={768}
+        className="pointer-events-none absolute -right-6 bottom-4 hidden h-56 w-56 object-contain opacity-90 animate-float-slow md:block lg:right-12"
+      />
+      <img
+        src={illuLaunch}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        width={768}
+        height={768}
+        className="pointer-events-none absolute -left-10 top-10 hidden h-40 w-40 -scale-x-100 object-contain opacity-30 animate-float-slow lg:block"
+        style={{ animationDelay: "1.5s" }}
+      />
       <div className="relative mx-auto max-w-[1240px] px-5 py-24 text-center sm:px-8 sm:py-32">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 font-mono text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white/75 backdrop-blur-sm">
           <span className="size-1.5 animate-pulse-dot rounded-full bg-electric" />
