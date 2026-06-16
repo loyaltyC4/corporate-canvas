@@ -166,20 +166,35 @@ const stats = [
   { label: "Most active buyer", value: "Tshwane", note: "418 awards · 12 months" },
 ];
 
+import illuAnalytics from "@/assets/illu-analytics.png";
+
 export function Intelligence() {
   return (
     <section id="intelligence" className="border-b border-hair bg-white">
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-8 sm:py-32">
-        <div className="max-w-3xl">
-          <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-electric">
-            Vula Intelligence
+        <div className="grid items-center gap-10 lg:grid-cols-[1.5fr_1fr]">
+          <div className="max-w-3xl">
+            <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-electric">
+              Vula Intelligence
+            </div>
+            <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-navy sm:text-[52px]">
+              See where the money <em className="italic text-electric">actually</em> goes.
+            </h2>
+            <p className="mt-5 text-[16px] leading-relaxed text-navy/65">
+              Live award data from National Treasury, decoded: which buyers award, to whom, at what size, and how often small businesses win. Stop bidding blind.
+            </p>
           </div>
-          <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-navy sm:text-[52px]">
-            See where the money <em className="italic text-electric">actually</em> goes.
-          </h2>
-          <p className="mt-5 text-[16px] leading-relaxed text-navy/65">
-            Live award data from National Treasury, decoded: which buyers award, to whom, at what size, and how often small businesses win. Stop bidding blind.
-          </p>
+          <div className="relative hidden lg:block">
+            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-sky-wash to-transparent blur-2xl" />
+            <img
+              src={illuAnalytics}
+              alt="Person analysing live award data on a dashboard"
+              loading="lazy"
+              width={768}
+              height={768}
+              className="mx-auto h-64 w-64 object-contain animate-float-slow"
+            />
+          </div>
         </div>
 
         {/* Stat row */}
