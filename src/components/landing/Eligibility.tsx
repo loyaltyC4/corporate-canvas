@@ -23,12 +23,22 @@ const checks = [
   { label: "B-BBEE level", value: "Level 4 · target Level 2 for full points", status: "warn" },
 ];
 
+import illuShield from "@/assets/illu-shield.png";
+
 export function Eligibility() {
   return (
     <section id="eligibility" className="border-b border-hair bg-white">
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-8 sm:py-32">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
-          <div>
+          <div className="relative">
+            <img
+              src={illuShield}
+              alt="Person holding a compliance shield with a checkmark"
+              loading="lazy"
+              width={768}
+              height={768}
+              className="pointer-events-none absolute -right-4 -top-6 hidden h-40 w-40 object-contain opacity-90 animate-float-slow lg:block"
+            />
             <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-electric">
               Eligibility engine
             </div>
